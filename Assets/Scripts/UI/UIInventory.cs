@@ -234,7 +234,7 @@ public class UIInventory : MonoBehaviour
         SelectItem(selectedItemIndex);
 
         controller.wing.SetActive(true);
-        controller.jumpPower += 60;
+        controller.jumpPower += 80;
     }
 
     void UnEquip(int index)

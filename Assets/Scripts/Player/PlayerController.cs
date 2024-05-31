@@ -23,7 +23,7 @@ public partial class PlayerController : MonoBehaviour
     private Vector2 mouseDelta;
     public bool canLook = true;
         
-    public Vector3 cameraOffset = new Vector3(0, 2, -4); // 카메라의 오프셋
+    public Vector3 cameraOffset = new Vector3(0, 2, -4); 
 
     private Rigidbody rb;
 
@@ -128,7 +128,7 @@ public partial class PlayerController : MonoBehaviour
             new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.01f), Vector3.down)
         };
 
-        bool wasGrounded = isGrounded;
+        bool wasGrounded = isGrounded; // 상태가 변할때만 호출되게
         isGrounded = false;
 
         for (int i = 0; i < rays.Length; i++)

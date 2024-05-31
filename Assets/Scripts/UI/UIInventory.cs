@@ -233,7 +233,7 @@ public class UIInventory : MonoBehaviour
 
         SelectItem(selectedItemIndex);
 
-        controller.wing.SetActive(true);
+        controller.wing.SetActive(true); // 날개 장착
         controller.jumpPower += 80;
     }
 
@@ -248,7 +248,7 @@ public class UIInventory : MonoBehaviour
             SelectItem(selectedItemIndex);
         }
 
-        controller.wing.SetActive(false);
+        controller.wing.SetActive(false); // 날개 해제
         controller.jumpPower = controller.baseJumpPower;
     }
 
